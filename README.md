@@ -6,7 +6,19 @@ Base Docker Nginx Image
 
 ### Prerequisites
 
+```shell
+brew install docker
+# or
+brew install --cask docker
+```
+
 ### Build
+
+```shell
+cd src/
+docker build -t docker-nginx-local --pull .
+docker run --rm -it docker-nginx-local
+```
 
 ## Contributing
 
